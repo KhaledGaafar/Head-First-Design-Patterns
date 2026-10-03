@@ -19,7 +19,7 @@ class CurrentConditionsDisplay(IObserver, IDisplayElement):
     def update(self):
         self.temperature = self.weather_data.temperature
         self.humidity = self.weather_data.humidity
-        self.display()  # Corrected from display() to self.display()
+        self.display()
 
     def display(self):
         print(f"Current conditions: {self.temperature}°C and {self.humidity}% humidity")
